@@ -1,0 +1,16 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: update repo index for Ubuntu
+    apt:
+      update_cache: yes
+    when: ansible_distribution_version == "Ubuntu"
+
+  - name: install apache2
+    apt:
+      name: apache2
+      state: latest
+    when: ansible_distribution == "Ubuntu"
