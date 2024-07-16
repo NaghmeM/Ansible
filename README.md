@@ -1,5 +1,3 @@
-Thank you for providing the inventory file. I'll update the README to include this information. Here's the expanded README:
-
 # Ansible Learning Project
 
 ## Project Overview
